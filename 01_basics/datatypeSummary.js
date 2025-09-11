@@ -1,5 +1,7 @@
 // # primary
 
+const { useSyncExternalStore } = require("react");
+
 //7. primitive types : string, number, boolean, null, undefined, symbol, bigInt
 
 const value = 200;
@@ -33,3 +35,24 @@ let myFunc = function(){
 console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 console.log(typeof myFunc);
+
+//stack(primitive) and heap(non-primitive)
+
+let youtube = "chhavi";
+let youtubeChannel = youtube;
+youtube = "nikki";
+
+console.log(youtube);
+console.log(youtubeChannel);
+
+let userOne = {
+    email: "haush@gmail.com",
+    upi: 13243
+}
+
+let userTwo = userOne;
+
+userTwo.email = "niikkk@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
