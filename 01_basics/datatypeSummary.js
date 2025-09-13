@@ -1,6 +1,6 @@
 // # primary
 
-const { useSyncExternalStore } = require("react");
+// const { useSyncExternalStore } = require("react");
 
 //7. primitive types : string, number, boolean, null, undefined, symbol, bigInt
 
@@ -11,7 +11,7 @@ const isLoggedIn = true;
 const outsideTemp = null;
 let emailUser;
 
-const id  = Symbol('123');
+const id = Symbol('123');
 const newId = Symbol('123');
 
 console.log(id === newId);
@@ -23,12 +23,12 @@ const bigNumber = 123456767654345n;
 //arrays, objects, functions
 
 const heros = ["shaktiman", "naagraj", "dogra"];
-let myObj = { 
+let myObj = {
     name: "chhavi",
     age: 19
 }
 
-let myFunc = function(){
+let myFunc = function () {
     console.log("Hello world");
 }
 
@@ -56,3 +56,15 @@ userTwo.email = "niikkk@gmail.com";
 
 console.log(userOne.email);
 console.log(userTwo.email);
+
+const gamename = new String('Chhavi');
+
+console.log(gamename[0]);
+console.log(gamename.__proto__);
+console.log(gamename);
+console.log(gamename.length);
+console.log(gamename.toUpperCase());
+console.log(gamename.charAt('c'));
+console.log(gamename.charAt(3));
+console.log(gamename.indexOf('v'));
+console.log(gamename.substring(2,4));
