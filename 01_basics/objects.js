@@ -17,6 +17,11 @@ console.log(jsUser[mySym]);
 console.log(typeof jsUser.mySym);
 
 jsUser.name = "Neha";
-Object.freeze(jsUser);
+// Object.freeze(jsUser);
 jsUser.name = "Sneha";
 console.log(jsUser);
+
+jsUser.greeting = function(){
+    console.log(`hello ,${this.name}`);
+}
+console.log(jsUser.greeting());
