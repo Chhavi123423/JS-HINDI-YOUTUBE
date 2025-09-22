@@ -26,6 +26,9 @@ map.set('FR', 'FRANCE');
 for( const [keys, value] of map){
     // console.log(keys ,':-',value);
 }
+for(const key in map){
+    console.log(key);  //map is not iterable in for in loop 
+}
 
 
 //will show error my object is not iterable.....there is some ither method for object.....this method will not work here
