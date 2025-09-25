@@ -40,10 +40,10 @@ const books = [
   }
 ];
 
-const userBooks = books.filter((book) => book.genre === "Thriller");
+let userBooks = books.filter((book) => book.genre === "Thriller");
     // if(book.genre === "Thriller")
     //     return book.genre;
 
-
+    userBooks = books.filter((book)=>{return book.established >= 2000})
 
 console.log(userBooks);
