@@ -1,18 +1,18 @@
-const num = [1,2,3,4,5,6,7,8,9];
+// const num = [1,2,3,4,5,6,7,8,9];
 
-// const newNums = num.filter((num) => {
-//     return num > 4;
+// // const newNums = num.filter((num) => {
+// //     return num > 4;
+// // })
+// // console.log(newNums);
+
+// const newNum = [];
+
+// num.forEach((num) => {
+//     if(num > 4){
+//         newNum.push(num)
+//     }
 // })
-// console.log(newNums);
-
-const newNum = [];
-
-num.forEach((num) => {
-    if(num > 4){
-        newNum.push(num)
-    }
-})
-console.log(newNum);
+// console.log(newNum);
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -47,3 +47,17 @@ let userBooks = books.filter((book) => book.genre === "Thriller");
     userBooks = books.filter((book)=>{return book.established >= 2000})
 
 console.log(userBooks);
+
+const numbers = [1,2,3,4,5,6,7];
+
+// const newNums = numbers.map((num) => {
+//   return num + 10;
+// })
+
+
+//CHAINING;
+const newNums = numbers
+                .map((num)=> num * 10)
+                .map((num)=> num + 1)
+                .filter((num) => num >= 40)
+console.log(newNums);
