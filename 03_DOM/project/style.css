@@ -1,0 +1,22 @@
+*
+{
+ padding: none;
+ margin: none
+}
+
+body {
+    background-color: black;
+}
+
+button {
+    background-color: gray;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 25px;;
+}
+
+h1 {
+    font-size: 50px;
+    color: whitesmoke
+    
+}
