@@ -1,8 +1,9 @@
 *{
-    padding: 0px;
+    padding-top: 50px;
     margin: 0px;
     text-decoration: none;
     background-color: gray;
+    
 }
 
 h1{
@@ -15,7 +16,8 @@ h1{
     display: flex;
     justify-content: center;
     gap: 20px;
-     
+    /* width: 400px;
+     margin: 0 auto */
 }
 
 input{
@@ -28,4 +30,5 @@ button{
     padding: 20px;
     border-radius: 20px;
     font-size: 20px;
+    cursor: pointer
 }
